@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&family=Source+Serif+Pro:wght@600&display=swap");
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Serif Pro', serif; */
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+:root {
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea;
+  --accents-3: #999999;
+  --accents-4: #888888;
+  --accents-5: #666666;
+}
+
+.App {
+  width: 400px;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+}
+
+.card-header {
+  @apply inline-block absolute;
+  transform: translate(-1.25rem, -1.8rem);
+}
+
+.pill {
+  @apply shadow-lg uppercase font-black;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  /* background-color: #ffe66d; */
+  border-radius: 13px;
+  padding: 0.2rem 0.7rem;
+  /* position: relative; */
+}
+
+.emoji {
+  transform: translateY(4px);
+}
+
+.skeleton {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+
+  background-image: linear-gradient(270deg, var(--accents-1), var(--accents-2), var(--accents-2), var(--accents-1));
+  background-size: 400% 100%;
+  animation: loading 8s ease-in-out infinite;
+}
+
+.gradient {
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 53%, rgba(37,255,0,1) 100%);
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@import "tailwindcss/utilities";

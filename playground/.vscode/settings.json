@@ -1,0 +1,4 @@
+{
+  "python.pythonPath": "/Users/lawrencechen/Projects/news-chrome-extension/playground/venv/bin/python3",
+  "python.formatting.provider": "black"
+}
