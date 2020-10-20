@@ -4,4 +4,4 @@ A browser extension created for 2020's Congressional App Challenge. Impartial is
 
 ### License
 
-Impartial is | [MIT Licensed](./LICENSE).
+Impartial is [MIT Licensed](./LICENSE).
